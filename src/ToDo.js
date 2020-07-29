@@ -79,7 +79,7 @@ function TodosComponent() {
     function edit(index) {
         let todosArray = [...todos];
         for(var i=0; i < todosArray.length; i++) {
-            if(i != index) {
+            if(i !== index) {
                 todosArray[i].editing = false;
             }
             for(var j=0; j < todosArray[i].children.length; j++) {
@@ -96,7 +96,7 @@ function TodosComponent() {
         for(var i=0; i < todosArray.length; i++) {
             todosArray[i].editing = false;
             for(var j=0; j < todosArray[i].children.length; j++) {
-                if(i != index || j !=subindex) {
+                if(i !== index || j !== subindex) {
                     todosArray[i].children[j].editing = false;
                 }
             }
